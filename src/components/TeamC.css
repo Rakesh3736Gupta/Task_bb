@@ -1,0 +1,59 @@
+TeamC.css
+.border-wrapper {
+  position: relative;
+  padding: 2px; /* Adjusted padding for a thicker border */
+  border-radius: 0.75rem; /* Slightly larger border radius */
+  background: linear-gradient(45deg, #0073e6, #ff0000, #00ff00, #ff00ff);
+  background-size: 200% 200%;
+  animation: borderAnimation 5s infinite linear;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.border-wrapper:hover {
+  transform: scale(1.1); /* Slightly more scale effect on hover */
+}
+
+.team-card {
+  position: relative;
+  background: white;
+  border-radius: 0.75rem; /* Larger border radius for the card */
+  overflow: hidden;
+  z-index: 1;
+}
+
+.team-card img {
+  width: 8rem; /* Increased image size */
+  height: 8rem; /* Increased image size */
+  border-radius: 50%;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.team-card p {
+  font-size: 0.875rem;
+}
+
+.team-card .fab {
+  font-size: 1.25rem; /* Larger icon size */
+}
+
+/* Border animation */
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Adjust grid to display 3 cards in a row on larger screens */
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

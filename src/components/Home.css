@@ -1,0 +1,12 @@
+body {
+    background-color: #ebf8ff; /* Matches the bg-blue-100 color */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+    max-width: 100%;
+    overflow-x: hidden; /* Additional overflow prevention */
+}
